@@ -1,3 +1,4 @@
-$(function(){ $("head").load("/template/head.html", function() {
+$(function(){ $.get("/template/head.html", function(data) {
+    $(data).appendTo("head");
     includeHTML();
 });});
